@@ -1,0 +1,1818 @@
+{
+    "categories": [
+        {
+            "actions": [
+            ],
+            "connectors": [
+            ],
+            "events": [
+            ],
+            "id": "FalconBMS_TP.cat.main",
+            "name": "Falcon BMS",
+            "states": [
+                {
+                    "default": "Off",
+                    "desc": "BMS: en ejecucion",
+                    "id": "FalconBMS_TP.state.sim.running",
+                    "parentGroup": "Simulador",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "",
+                    "desc": "Plugin: diagnostico de la memoria compartida",
+                    "id": "FalconBMS_TP.state.sim.diag",
+                    "parentGroup": "Simulador",
+                    "type": "text"
+                },
+                {
+                    "default": "Off",
+                    "desc": "BMS: piloto en un avion (no en la interfaz)",
+                    "id": "FalconBMS_TP.state.sim.flying",
+                    "parentGroup": "Simulador",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "BMS: en 3D",
+                    "id": "FalconBMS_TP.state.sim.in3d",
+                    "parentGroup": "Simulador",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "BMS: en pausa",
+                    "id": "FalconBMS_TP.state.sim.paused",
+                    "parentGroup": "Simulador",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "BMS: en tierra",
+                    "id": "FalconBMS_TP.state.sim.onGround",
+                    "parentGroup": "Simulador",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "",
+                    "desc": "BMS: version",
+                    "id": "FalconBMS_TP.state.sim.version",
+                    "parentGroup": "Simulador",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "BMS: hora en el simulador (HH:MM:SS)",
+                    "id": "FalconBMS_TP.state.sim.time",
+                    "parentGroup": "Simulador",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Velocidad indicada (kt)",
+                    "id": "FalconBMS_TP.state.flight.kias",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Velocidad verdadera (kt)",
+                    "id": "FalconBMS_TP.state.flight.tas",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Mach",
+                    "id": "FalconBMS_TP.state.flight.mach",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Altitud barometrica (ft)",
+                    "id": "FalconBMS_TP.state.flight.altitude",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Altitud real (ft)",
+                    "id": "FalconBMS_TP.state.flight.altitudeTrue",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Radioaltimetro (ft, vacio si no es valido)",
+                    "id": "FalconBMS_TP.state.flight.ralt",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Velocidad vertical (ft/min)",
+                    "id": "FalconBMS_TP.state.flight.vvi",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Rumbo verdadero (grados)",
+                    "id": "FalconBMS_TP.state.flight.heading",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Rumbo en el HSI (grados)",
+                    "id": "FalconBMS_TP.state.flight.hsiHeading",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Cabeceo (grados)",
+                    "id": "FalconBMS_TP.state.flight.pitch",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Alabeo (grados)",
+                    "id": "FalconBMS_TP.state.flight.roll",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Angulo de ataque (grados)",
+                    "id": "FalconBMS_TP.state.flight.aoa",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Factor de carga (G)",
+                    "id": "FalconBMS_TP.state.flight.g",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Factor de carga maximo (G)",
+                    "id": "FalconBMS_TP.state.flight.gMax",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Latitud (grados)",
+                    "id": "FalconBMS_TP.state.flight.latitude",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Longitud (grados)",
+                    "id": "FalconBMS_TP.state.flight.longitude",
+                    "parentGroup": "Vuelo",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "RPM (%)",
+                    "id": "FalconBMS_TP.state.engine.rpm",
+                    "parentGroup": "Motor",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "FTIT (grados C)",
+                    "id": "FalconBMS_TP.state.engine.ftit",
+                    "parentGroup": "Motor",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Tobera (% abierta)",
+                    "id": "FalconBMS_TP.state.engine.nozzle",
+                    "parentGroup": "Motor",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Presion de aceite (%)",
+                    "id": "FalconBMS_TP.state.engine.oil",
+                    "parentGroup": "Motor",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Flujo de combustible (lb/h)",
+                    "id": "FalconBMS_TP.state.engine.fuelFlow",
+                    "parentGroup": "Motor",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Combustible EPU (%)",
+                    "id": "FalconBMS_TP.state.engine.epuFuel",
+                    "parentGroup": "Motor",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Presion hidraulica A",
+                    "id": "FalconBMS_TP.state.engine.hydA",
+                    "parentGroup": "Motor",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Presion hidraulica B",
+                    "id": "FalconBMS_TP.state.engine.hydB",
+                    "parentGroup": "Motor",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Combustible interno (lb)",
+                    "id": "FalconBMS_TP.state.fuel.internal",
+                    "parentGroup": "Combustible",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Combustible externo (lb)",
+                    "id": "FalconBMS_TP.state.fuel.external",
+                    "parentGroup": "Combustible",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Combustible total (lb)",
+                    "id": "FalconBMS_TP.state.fuel.total",
+                    "parentGroup": "Combustible",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Combustible deposito delantero (lb)",
+                    "id": "FalconBMS_TP.state.fuel.fwd",
+                    "parentGroup": "Combustible",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Combustible deposito trasero (lb)",
+                    "id": "FalconBMS_TP.state.fuel.aft",
+                    "parentGroup": "Combustible",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Bingo (lb)",
+                    "id": "FalconBMS_TP.state.fuel.bingo",
+                    "parentGroup": "Combustible",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Tren: posicion (%; 0 arriba, 100 abajo)",
+                    "id": "FalconBMS_TP.state.gear.position",
+                    "parentGroup": "Tren y frenos",
+                    "type": "text"
+                },
+                {
+                    "default": "Off",
+                    "desc": "Tren delantero abajo y blocado",
+                    "id": "FalconBMS_TP.state.gear.noseDown",
+                    "parentGroup": "Tren y frenos",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Tren izquierdo abajo y blocado",
+                    "id": "FalconBMS_TP.state.gear.leftDown",
+                    "parentGroup": "Tren y frenos",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Tren derecho abajo y blocado",
+                    "id": "FalconBMS_TP.state.gear.rightDown",
+                    "parentGroup": "Tren y frenos",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Luz de la palanca del tren",
+                    "id": "FalconBMS_TP.state.gear.handleLight",
+                    "parentGroup": "Tren y frenos",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Freno de aparcamiento",
+                    "id": "FalconBMS_TP.state.gear.parkBrake",
+                    "parentGroup": "Tren y frenos",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "",
+                    "desc": "Aerofreno (% abierto)",
+                    "id": "FalconBMS_TP.state.gear.speedBrake",
+                    "parentGroup": "Tren y frenos",
+                    "type": "text"
+                },
+                {
+                    "default": "Off",
+                    "desc": "MASTER CAUTION",
+                    "id": "FalconBMS_TP.state.lights.masterCaution",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "ENG FIRE",
+                    "id": "FalconBMS_TP.state.lights.engFire",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "ENGINE",
+                    "id": "FalconBMS_TP.state.lights.engine",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "HYD/OIL PRESS",
+                    "id": "FalconBMS_TP.state.lights.hyd",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FLCS",
+                    "id": "FalconBMS_TP.state.lights.flcs",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "DBU ON",
+                    "id": "FalconBMS_TP.state.lights.dbu",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "TO/LDG CONFIG",
+                    "id": "FalconBMS_TP.state.lights.tlCfg",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "CANOPY",
+                    "id": "FalconBMS_TP.state.lights.can",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "OXY LOW",
+                    "id": "FalconBMS_TP.state.lights.oxyLow",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "TF FAIL",
+                    "id": "FalconBMS_TP.state.lights.tf",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FUEL LOW (panel de precaucion)",
+                    "id": "FalconBMS_TP.state.lights.fuelLow",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Piloto automatico conectado",
+                    "id": "FalconBMS_TP.state.lights.autopilot",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "JFS RUN",
+                    "id": "FalconBMS_TP.state.lights.jfsRun",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "EPU RUN",
+                    "id": "FalconBMS_TP.state.lights.epuRun",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "MAIN GEN",
+                    "id": "FalconBMS_TP.state.lights.mainGen",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "STBY GEN",
+                    "id": "FalconBMS_TP.state.lights.stbyGen",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Indexador AOA: alto",
+                    "id": "FalconBMS_TP.state.lights.aoaAbove",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Indexador AOA: en angulo",
+                    "id": "FalconBMS_TP.state.lights.aoaOn",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Indexador AOA: bajo",
+                    "id": "FalconBMS_TP.state.lights.aoaBelow",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Reabastecimiento: RDY",
+                    "id": "FalconBMS_TP.state.lights.refuelRdy",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Reabastecimiento: AR/NWS",
+                    "id": "FalconBMS_TP.state.lights.refuelAr",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Reabastecimiento: DISC",
+                    "id": "FalconBMS_TP.state.lights.refuelDsc",
+                    "parentGroup": "Luces de aviso",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "",
+                    "desc": "Chaff restante",
+                    "id": "FalconBMS_TP.state.cm.chaff",
+                    "parentGroup": "Contramedidas",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Bengalas restantes",
+                    "id": "FalconBMS_TP.state.cm.flare",
+                    "parentGroup": "Contramedidas",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Modo CMDS",
+                    "id": "FalconBMS_TP.state.cm.mode",
+                    "parentGroup": "Contramedidas",
+                    "type": "text"
+                },
+                {
+                    "default": "Off",
+                    "desc": "Chaff bajo (bingo)",
+                    "id": "FalconBMS_TP.state.cm.chaffLow",
+                    "parentGroup": "Contramedidas",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Bengalas bajas (bingo)",
+                    "id": "FalconBMS_TP.state.cm.flareLow",
+                    "parentGroup": "Contramedidas",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "",
+                    "desc": "UHF: canal",
+                    "id": "FalconBMS_TP.state.radio.uhfPreset",
+                    "parentGroup": "Radio y navegacion",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "UHF: frecuencia del canal (MHz)",
+                    "id": "FalconBMS_TP.state.radio.uhfFreq",
+                    "parentGroup": "Radio y navegacion",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "TACAN (canal y banda, UFC)",
+                    "id": "FalconBMS_TP.state.nav.tacan",
+                    "parentGroup": "Radio y navegacion",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Modo HSI",
+                    "id": "FalconBMS_TP.state.nav.mode",
+                    "parentGroup": "Radio y navegacion",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Distancia a la baliza (nm)",
+                    "id": "FalconBMS_TP.state.nav.distance",
+                    "parentGroup": "Radio y navegacion",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Marcacion a la baliza (grados)",
+                    "id": "FalconBMS_TP.state.nav.bearing",
+                    "parentGroup": "Radio y navegacion",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "Curso seleccionado (grados)",
+                    "id": "FalconBMS_TP.state.nav.course",
+                    "parentGroup": "Radio y navegacion",
+                    "type": "text"
+                },
+                {
+                    "default": "Off",
+                    "desc": "MasterCaution",
+                    "id": "FalconBMS_TP.state.lightBits.MasterCaution",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "TF",
+                    "id": "FalconBMS_TP.state.lightBits.TF",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "OXY_BROW",
+                    "id": "FalconBMS_TP.state.lightBits.OXY_BROW",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "EQUIP_HOT",
+                    "id": "FalconBMS_TP.state.lightBits.EQUIP_HOT",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "ONGROUND",
+                    "id": "FalconBMS_TP.state.lightBits.ONGROUND",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "ENG_FIRE",
+                    "id": "FalconBMS_TP.state.lightBits.ENG_FIRE",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "CONFIG",
+                    "id": "FalconBMS_TP.state.lightBits.CONFIG",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "HYD",
+                    "id": "FalconBMS_TP.state.lightBits.HYD",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Flcs_ABCD",
+                    "id": "FalconBMS_TP.state.lightBits.Flcs_ABCD",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FLCS",
+                    "id": "FalconBMS_TP.state.lightBits.FLCS",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "CAN",
+                    "id": "FalconBMS_TP.state.lightBits.CAN",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "T_L_CFG",
+                    "id": "FalconBMS_TP.state.lightBits.T_L_CFG",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "AOAAbove",
+                    "id": "FalconBMS_TP.state.lightBits.AOAAbove",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "AOAOn",
+                    "id": "FalconBMS_TP.state.lightBits.AOAOn",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "AOABelow",
+                    "id": "FalconBMS_TP.state.lightBits.AOABelow",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "RefuelRDY",
+                    "id": "FalconBMS_TP.state.lightBits.RefuelRDY",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "RefuelAR",
+                    "id": "FalconBMS_TP.state.lightBits.RefuelAR",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "RefuelDSC",
+                    "id": "FalconBMS_TP.state.lightBits.RefuelDSC",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FltControlSys",
+                    "id": "FalconBMS_TP.state.lightBits.FltControlSys",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "LEFlaps",
+                    "id": "FalconBMS_TP.state.lightBits.LEFlaps",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "EngineFault",
+                    "id": "FalconBMS_TP.state.lightBits.EngineFault",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Overheat",
+                    "id": "FalconBMS_TP.state.lightBits.Overheat",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FuelLow",
+                    "id": "FalconBMS_TP.state.lightBits.FuelLow",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Avionics",
+                    "id": "FalconBMS_TP.state.lightBits.Avionics",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "RadarAlt",
+                    "id": "FalconBMS_TP.state.lightBits.RadarAlt",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "IFF",
+                    "id": "FalconBMS_TP.state.lightBits.IFF",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "ECM",
+                    "id": "FalconBMS_TP.state.lightBits.ECM",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Hook",
+                    "id": "FalconBMS_TP.state.lightBits.Hook",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "NWSFail",
+                    "id": "FalconBMS_TP.state.lightBits.NWSFail",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "CabinPress",
+                    "id": "FalconBMS_TP.state.lightBits.CabinPress",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "AutoPilotOn",
+                    "id": "FalconBMS_TP.state.lightBits.AutoPilotOn",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "TFR_STBY",
+                    "id": "FalconBMS_TP.state.lightBits.TFR_STBY",
+                    "parentGroup": "LightBits",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "HandOff",
+                    "id": "FalconBMS_TP.state.lightBits2.HandOff",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Launch",
+                    "id": "FalconBMS_TP.state.lightBits2.Launch",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "PriMode",
+                    "id": "FalconBMS_TP.state.lightBits2.PriMode",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Naval",
+                    "id": "FalconBMS_TP.state.lightBits2.Naval",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Unk",
+                    "id": "FalconBMS_TP.state.lightBits2.Unk",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "TgtSep",
+                    "id": "FalconBMS_TP.state.lightBits2.TgtSep",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Go",
+                    "id": "FalconBMS_TP.state.lightBits2.Go",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "NoGo",
+                    "id": "FalconBMS_TP.state.lightBits2.NoGo",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Degr",
+                    "id": "FalconBMS_TP.state.lightBits2.Degr",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Rdy",
+                    "id": "FalconBMS_TP.state.lightBits2.Rdy",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "ChaffLo",
+                    "id": "FalconBMS_TP.state.lightBits2.ChaffLo",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FlareLo",
+                    "id": "FalconBMS_TP.state.lightBits2.FlareLo",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "AuxSrch",
+                    "id": "FalconBMS_TP.state.lightBits2.AuxSrch",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "AuxAct",
+                    "id": "FalconBMS_TP.state.lightBits2.AuxAct",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "AuxLow",
+                    "id": "FalconBMS_TP.state.lightBits2.AuxLow",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "AuxPwr",
+                    "id": "FalconBMS_TP.state.lightBits2.AuxPwr",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "EcmPwr",
+                    "id": "FalconBMS_TP.state.lightBits2.EcmPwr",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "EcmFail",
+                    "id": "FalconBMS_TP.state.lightBits2.EcmFail",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FwdFuelLow",
+                    "id": "FalconBMS_TP.state.lightBits2.FwdFuelLow",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "AftFuelLow",
+                    "id": "FalconBMS_TP.state.lightBits2.AftFuelLow",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "EPUOn",
+                    "id": "FalconBMS_TP.state.lightBits2.EPUOn",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "JFSOn",
+                    "id": "FalconBMS_TP.state.lightBits2.JFSOn",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "SEC",
+                    "id": "FalconBMS_TP.state.lightBits2.SEC",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "OXY_LOW",
+                    "id": "FalconBMS_TP.state.lightBits2.OXY_LOW",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "PROBEHEAT",
+                    "id": "FalconBMS_TP.state.lightBits2.PROBEHEAT",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "SEAT_ARM",
+                    "id": "FalconBMS_TP.state.lightBits2.SEAT_ARM",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "BUC",
+                    "id": "FalconBMS_TP.state.lightBits2.BUC",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FUEL_OIL_HOT",
+                    "id": "FalconBMS_TP.state.lightBits2.FUEL_OIL_HOT",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "ANTI_SKID",
+                    "id": "FalconBMS_TP.state.lightBits2.ANTI_SKID",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "TFR_ENGAGED",
+                    "id": "FalconBMS_TP.state.lightBits2.TFR_ENGAGED",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "GEARHANDLE",
+                    "id": "FalconBMS_TP.state.lightBits2.GEARHANDLE",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "ENGINE",
+                    "id": "FalconBMS_TP.state.lightBits2.ENGINE",
+                    "parentGroup": "LightBits2",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FlcsPmg",
+                    "id": "FalconBMS_TP.state.lightBits3.FlcsPmg",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "MainGen",
+                    "id": "FalconBMS_TP.state.lightBits3.MainGen",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "StbyGen",
+                    "id": "FalconBMS_TP.state.lightBits3.StbyGen",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "EpuGen",
+                    "id": "FalconBMS_TP.state.lightBits3.EpuGen",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "EpuPmg",
+                    "id": "FalconBMS_TP.state.lightBits3.EpuPmg",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "ToFlcs",
+                    "id": "FalconBMS_TP.state.lightBits3.ToFlcs",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FlcsRly",
+                    "id": "FalconBMS_TP.state.lightBits3.FlcsRly",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "BatFail",
+                    "id": "FalconBMS_TP.state.lightBits3.BatFail",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Hydrazine",
+                    "id": "FalconBMS_TP.state.lightBits3.Hydrazine",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Air",
+                    "id": "FalconBMS_TP.state.lightBits3.Air",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Elec_Fault",
+                    "id": "FalconBMS_TP.state.lightBits3.Elec_Fault",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Lef_Fault",
+                    "id": "FalconBMS_TP.state.lightBits3.Lef_Fault",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "OnGround",
+                    "id": "FalconBMS_TP.state.lightBits3.OnGround",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FlcsBitRun",
+                    "id": "FalconBMS_TP.state.lightBits3.FlcsBitRun",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "FlcsBitFail",
+                    "id": "FalconBMS_TP.state.lightBits3.FlcsBitFail",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "DbuWarn",
+                    "id": "FalconBMS_TP.state.lightBits3.DbuWarn",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "NoseGearDown",
+                    "id": "FalconBMS_TP.state.lightBits3.NoseGearDown",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "LeftGearDown",
+                    "id": "FalconBMS_TP.state.lightBits3.LeftGearDown",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "RightGearDown",
+                    "id": "FalconBMS_TP.state.lightBits3.RightGearDown",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "ParkBrakeOn",
+                    "id": "FalconBMS_TP.state.lightBits3.ParkBrakeOn",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Power_Off",
+                    "id": "FalconBMS_TP.state.lightBits3.Power_Off",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "cadc",
+                    "id": "FalconBMS_TP.state.lightBits3.cadc",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "SpeedBrake",
+                    "id": "FalconBMS_TP.state.lightBits3.SpeedBrake",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "SysTest",
+                    "id": "FalconBMS_TP.state.lightBits3.SysTest",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "MCAnnounced",
+                    "id": "FalconBMS_TP.state.lightBits3.MCAnnounced",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "MLGWOW",
+                    "id": "FalconBMS_TP.state.lightBits3.MLGWOW",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "NLGWOW",
+                    "id": "FalconBMS_TP.state.lightBits3.NLGWOW",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "ATF_Not_Engaged",
+                    "id": "FalconBMS_TP.state.lightBits3.ATF_Not_Engaged",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "Off",
+                    "desc": "Inlet_Icing",
+                    "id": "FalconBMS_TP.state.lightBits3.Inlet_Icing",
+                    "parentGroup": "LightBits3",
+                    "type": "choice",
+                    "valueChoices": [
+                        "On",
+                        "Off"
+                    ]
+                },
+                {
+                    "default": "",
+                    "desc": "DED linea 1",
+                    "id": "FalconBMS_TP.state.ded.line1",
+                    "parentGroup": "DED y PFL",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "DED linea 2",
+                    "id": "FalconBMS_TP.state.ded.line2",
+                    "parentGroup": "DED y PFL",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "DED linea 3",
+                    "id": "FalconBMS_TP.state.ded.line3",
+                    "parentGroup": "DED y PFL",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "DED linea 4",
+                    "id": "FalconBMS_TP.state.ded.line4",
+                    "parentGroup": "DED y PFL",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "DED linea 5",
+                    "id": "FalconBMS_TP.state.ded.line5",
+                    "parentGroup": "DED y PFL",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "PFL linea 1",
+                    "id": "FalconBMS_TP.state.pfl.line1",
+                    "parentGroup": "DED y PFL",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "PFL linea 2",
+                    "id": "FalconBMS_TP.state.pfl.line2",
+                    "parentGroup": "DED y PFL",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "PFL linea 3",
+                    "id": "FalconBMS_TP.state.pfl.line3",
+                    "parentGroup": "DED y PFL",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "PFL linea 4",
+                    "id": "FalconBMS_TP.state.pfl.line4",
+                    "parentGroup": "DED y PFL",
+                    "type": "text"
+                },
+                {
+                    "default": "",
+                    "desc": "PFL linea 5",
+                    "id": "FalconBMS_TP.state.pfl.line5",
+                    "parentGroup": "DED y PFL",
+                    "type": "text"
+                }
+            ]
+        }
+    ],
+    "configuration": {
+        "colorDark": "#1b2a3a",
+        "colorLight": "#3d6b99",
+        "parentCategory": "games"
+    },
+    "id": "FalconBMS_TP",
+    "name": "Falcon BMS",
+    "plugin_start_cmd_windows": "\"%TP_PLUGIN_FOLDER%FalconBMS-TP\\FalconBMS-TP.exe\"",
+    "sdk": 6,
+    "settings": [
+        {
+            "default": "100",
+            "maxValue": 5000,
+            "minValue": 20,
+            "name": "Intervalo de actualizacion (ms)",
+            "readOnly": false,
+            "type": "number"
+        }
+    ],
+    "version": 9
+}
