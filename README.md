@@ -4,6 +4,9 @@ Plugin de Touch Portal que lee la memoria compartida de Falcon BMS **en modo sol
 valores como estados de Touch Portal. Usa el cliente C++/Qt de Max Paperno
 ([TouchPortal-CPP-API](https://github.com/mpaperno/TouchPortal-CPP-API), copiado en `third_party/TPClientQt`).
 
+Los ficheros de cabeceras en la ruta \include\bms son propiedad de Benchmark Sims. Se incluyen en el proyecto por
+comodidad de uso para quien quiera usar este proyecto como base.
+
 Primera versión: solo estados (88), sin acciones ni eventos.
 
 ## Estructura
